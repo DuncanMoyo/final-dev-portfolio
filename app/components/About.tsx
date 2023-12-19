@@ -9,7 +9,7 @@ const About = () => {
   return (
     <div className="flex flex-col min-h-screen justify-center my-0 mx-auto h-screen max-w-6xl items-start">
       <div className="flex justify-center items-center mb-5">
-        <h2 className="font-firaSansFont text-DELarge text-lightNavy">
+        <h2 className="font-firaSansFont text-DELarge font-bold text-lightNavy">
           <span className="mr-3 font-firaSansFont text-green">01. </span>About
           Me
         </h2>
@@ -34,9 +34,9 @@ const About = () => {
             <Link className="text-green" href="">
               start-up
             </Link>
-            , and going{" "}
+            , and currently{" "}
             <Link className="text-green" href="">
-              solo
+              searching new opportunites
             </Link>
             . My main focus these days is building accessible, inclusive
             products and digital experiences for myself and a variety of
@@ -47,10 +47,10 @@ const About = () => {
           </p>
 
           <div className="items-center mt-5 w-1/2 text-slate text-sm grid grid-cols-2 gap-4">
-            {aboutLanguages.map((language) => (
-              <div className="flex items-center">
+            {aboutLanguages.map((language, index) => (
+              <div className="flex items-center" key={index}>
                 <Icon name="caretRight" color="green" size="small" />
-                <p className="font-robotoFont">{language}</p>
+                <p className="font-robotoFont ml-1">{language}</p>
               </div>
             ))}
           </div>
