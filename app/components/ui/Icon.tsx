@@ -6,24 +6,23 @@ import { BsTwitterX } from "react-icons/bs";
 import { FiLinkedin } from "react-icons/fi";
 import { HiExternalLink } from "react-icons/hi";
 import { PiGitForkFill } from "react-icons/pi";
+import { FaCaretRight } from "react-icons/fa";
 
 export const iconNames = [
-  'github',
-  'instagram',
-  'twitterx',
-  'linkedin',
-  'link',
-  'folder',
-  'star',
-  'gitFork'
+  "github",
+  "instagram",
+  "twitterx",
+  "linkedin",
+  "link",
+  "folder",
+  "star",
+  "gitFork",
+  "caretRight",
 ] as const;
-
 
 export type IconName = (typeof iconNames)[number];
 
-export const iconSizes = [
-  "large",
-] as const;
+export const iconSizes = ["large", "small"] as const;
 
 export type IconSize = (typeof iconSizes)[number];
 
@@ -42,20 +41,22 @@ const selectIcon = (
   switch (iconName) {
     case "github":
       return <VscGithubAlt />;
-    case 'instagram':
-      return <FaInstagram />
-    case 'twitter':
-      return <BsTwitterX />
-    case 'linkedin':
-      return <FiLinkedin />
-    case 'link':
-      return <HiExternalLink />
-    case 'folder':
-      return <FaRegFolder />
-    case 'star':
-      return <FaRegStar />
-    case 'gitFork':
-      return <PiGitForkFill />
+    case "instagram":
+      return <FaInstagram />;
+    case "twitter":
+      return <BsTwitterX />;
+    case "linkedin":
+      return <FiLinkedin />;
+    case "link":
+      return <HiExternalLink />;
+    case "folder":
+      return <FaRegFolder />;
+    case "star":
+      return <FaRegStar />;
+    case "gitFork":
+      return <PiGitForkFill />;
+    case "caretRight":
+      return <FaCaretRight />;
     default:
       return <></>;
   }
@@ -63,6 +64,8 @@ const selectIcon = (
 
 const selectIconSize = (iconSize?: string) => {
   switch (iconSize) {
+    case "small":
+      return "12px";
     case "large":
       return "50px";
     default:
@@ -76,7 +79,7 @@ const IconWrapper = (props: any) => (
 
 const Icon: FC<IconPropTypes> = ({ name, color, size, onClick, pointer }) => (
   <IconContext.Provider
-    value={{ color: color ||"#adcdf4", size: selectIconSize(size) }}
+    value={{ color: color || "#adcdf4", size: selectIconSize(size) }}
   >
     <IconWrapper pointer={pointer} onClick={onClick}>
       {selectIcon(name, selectIconSize(size))}
