@@ -56,7 +56,7 @@ const About = () => {
           </div>
         </div>
         <div
-          className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10 before:w-full before: max-w-[400px]
+          className="image-tint relative z-0 ml-20 before:absolute before:-top-10 before:-left-10 before:w-full before: max-w-[400px]
             before:h-full before:border-2 before:border-green before:z-[-1] "
         >
           <Image

@@ -1,10 +1,10 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     fontSize: {
@@ -23,6 +23,7 @@ const config: Config = {
     extend: {
       colors: {
         navy: "#000316",
+        darkNavy: "#000a25",
         lightNavy: "#96abc5",
         lightestNavy: "#adcdf4",
         slate: "#a69e92",
@@ -38,6 +39,27 @@ const config: Config = {
       robotoFont: "var(--font-roboto)",
     },
   },
-  plugins: [require("tailwindcss-animate")],
-}
-export default config
+  plugins: [
+    require("tailwindcss-animate"),
+    function ({ addUtilities }: any) {
+      const newUtilities = {
+        ".image-tint::after": {
+          content: '""',
+          display: "block",
+          position: "absolute",
+          top: 0,
+          right: 0,
+          bottom: 0,
+          left: 0,
+          backgroundColor: "rgba(0, 100, 0, 0.5)", // This gives a green tint
+          pointerEvents: 'none', // This allows click events to pass through
+        },
+        ".image-tint:hover::after": {
+          opacity: 0,
+        },
+      };
+      addUtilities(newUtilities, ["responsive", "hover"]);
+    },
+  ],
+};
+export default config;

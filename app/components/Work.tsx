@@ -11,7 +11,7 @@ const Work = (props: Props) => {
     <div className="flex flex-col min-h-screen justify-center my-0 py-24 mx-80 h-screen max-w-6xl items-start">
       <div className="flex justify-center items-center mb-5">
         <h2 className="font-firaSansFont text-DELarge text-lightNavy font-bold">
-          <span className="mr-3 font-firaSansFont text-green">02. </span>Work Experience
+          <span className="mr-3 font-firaSansFont text-green">02. </span>Work
         </h2>
         <hr className="border border-t-1 border-green w-96 ml-3" />
       </div>
