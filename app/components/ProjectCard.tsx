@@ -6,9 +6,9 @@ import Link from "next/link";
 
 const ProjectCard = () => {
   return (
-    <div className="p-2 min-h-screen justify-center my-20 mx-auto h-screen max-w-6xl">
+    <div className="p-2 min-h-screen justify-center mb-20 mx-auto h-screen max-w-6xl">
       <div className="flex justify-center items-center mb-5">
-        <h2 className="font-firaSansFont text-DELarge font-bold text-lightNavy">
+        <h2 className="font-firaSansFont text-DELarge font-bold mb-10 text-lightNavy">
           Other Noteworthy Projects
         </h2>
         <hr className="border border-t-1 border-green w-96 ml-3" />
@@ -16,9 +16,9 @@ const ProjectCard = () => {
       <div className="grid grid-cols-3 gap-4 ">
         {noteworthyProjects.map(
           ({ description, tech, title, externalLink, github }, index) => (
-            <Link href={externalLink} target="_blank" key={index} className="flex flex-col bg-darkNavy p-4">
+            <div key={index} className="flex flex-col bg-darkNavy p-4">
               <div className="flex justify-between items-center">
-                <Icon name="folder" color="green" size="large" />
+                <Icon name="folder" color='#56ffda' size="large" />
                 <div className="flex">
                   <Link className="p-2" href={github} target="_blank">
                     <Icon name="github" />
@@ -44,7 +44,7 @@ const ProjectCard = () => {
                   </p>
                 ))}
               </div>
-            </Link>
+            </div>
           )
         )}
       </div>
