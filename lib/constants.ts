@@ -124,3 +124,75 @@ export const projectsData: {
     image: "/assets/images/threads.png",
   },
 ];
+
+export const noteworthyProjects: {
+  title: string;
+  description: string;
+  tech: string[];
+  externalLink: string;
+  github: string;
+}[] = [
+  {
+    title: "Evo Gym",
+    description:
+      "A simple gym landing page for a prospective gym company looking for customers",
+    tech: ["TypeScript", "Vite", "Framer-motion", "Tailwind"],
+    externalLink: "https://d6505744.gym-typescript-cgl.pages.dev/",
+    github: "https://github.com/DuncanMoyo/gym-typescript",
+  },
+  {
+    title: "Duncbook",
+    description:
+      "A web application that enables you to create, comment and post on your wall, kind of like Facebook.",
+    tech: ["Mongo", "Express", "React", "Node"],
+    externalLink: "https://duncbook-frontend.onrender.com/",
+    github: "https://github.com/DuncanMoyo/duncbook-mern",
+  },
+  {
+    title: "My Portfolio v1",
+    description: "My first serious attempt to create my developer portfolio. Learn more about the developer by the name Duncan Moyo.",
+    tech: ["React", "Framer-motion", "CSS", "Tailwind"],
+    externalLink: "https://duncan-portfolio.pages.dev/",
+    github: "https://github.com/DuncanMoyo/duncan-portfolio",
+  },
+  {
+    title: "Dunc-tube",
+    description: "A youtube clone where you can stream videos, Watch and enjoy! Your own streaming service right at your fingertips.",
+    tech: ["React", "Rapid-Api", "MUI", "React-player"],
+    externalLink: "https://sage-strudel-d9e012.netlify.app/",
+    github: "https://github.com/DuncanMoyo/youtube-clone/",
+  },
+  {
+    title: "Duncan Fitness Club",
+    description:
+      "An application that can help you with any type of exercises, free weights, machines, body exercises, you name it, we got it.",
+    tech: ["React", "Rapid-Api", "MUI", "Netlify"],
+    externalLink: "https://duncan-fitness-club.netlify.app/",
+    github: "https://github.com/DuncanMoyo/gym-exercises/",
+  },
+  {
+    title: "Article Summariser",
+    description:
+      "An article summariser that lets you summarise online articles using ChatGpt. Summarise!",
+    tech: ["Vite", "Tailwind", "ChatGpt", "React"],
+    externalLink:
+      "https://647d4c0caf2e9e162c6f1c1b--gregarious-cannoli-cffcbf.netlify.app/",
+    github: "https://github.com/DuncanMoyo/sumz/",
+  },
+  {
+    title: "Breadit",
+    description:
+      "Breadit is awesome, it is a reddit clone that you can use to start chats and create communities. Post and enjoy!",
+    tech: ["Typescript", "Tailwind", "Next.js", "Vercel"],
+    externalLink: "https://breadit-h457n5edu-duncanmoyo.vercel.app/",
+    github: "https://github.com/DuncanMoyo/breadit",
+  },
+  {
+    title: "Friendzone",
+    description:
+      "A simple app where you can send messages to friends that you have accepted after they have requested you",
+    tech: ["Next.js", "Tailwind", "Pusher", "Jwt"],
+    externalLink: "https://friendzone-4jgsjubxb-duncanmoyo.vercel.app/login",
+    github: "https://github.com/DuncanMoyo/friendzone/",
+  },
+];
