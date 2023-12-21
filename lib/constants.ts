@@ -196,3 +196,22 @@ export const noteworthyProjects: {
     github: "https://github.com/DuncanMoyo/friendzone/",
   },
 ];
+
+export const socialLinks: {icon: string, link: string}[] = [
+  {
+    icon: 'github',
+    link: 'https://github.com/DuncanMoyo'
+  },
+  {
+    icon: 'instagram',
+    link: 'https://www.instagram.com/duncan_moyo92'
+  },
+  {
+    icon: 'twitter',
+    link: 'https://twitter.com/moyoduncan2'
+  },
+  {
+    icon: 'linkedin',
+    link: 'http://www.linkedin.com/in/duncanmoyo'
+  }
+]

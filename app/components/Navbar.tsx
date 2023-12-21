@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { navLinks } from "@/lib/constants";
+import { navLinks, socialLinks } from "@/lib/constants";
 import { Button } from "./ui/button";
+import Icon from "./ui/Icon";
 
 const Navbar = () => {
   return (
@@ -38,6 +39,23 @@ const Navbar = () => {
             </Button>
           </div>
         </div>
+      </div>
+
+      {/* Fixed Divs */}
+      <div className="fixed flex flex-col bottom-0 left-10 p-4 items-center justify-between">
+        {socialLinks.map(({ icon, link }, index) => (
+          <Link key={index} href={link} target="_blank" className="pb-4">
+            <Icon name={icon} />
+          </Link>
+        ))}
+
+        <hr className="border border-t-1 border-lightNavy h-40" />
+      </div>
+      <div className="fixed flex flex-col items-center bottom-0 right-10 p-4 justify-between">
+        <p className="fixed font-robotoFont bottom-[250px] text-sm text-lightNavy rotate-90">
+          duncanfmoyo@gmail.com
+        </p>
+        <hr className="border border-t-1 border-lightNavy h-40" />
       </div>
     </div>
   );
