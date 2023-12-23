@@ -72,7 +72,7 @@ const ContactMe = ({ message }: Props) => {
   };
 
   return (
-    <div id="contact" className="flex flex-col min-h-screen justify-center pt-20 md:pt-0 my-0 mx-4 md:mx-auto h-full max-w-full md:max-w-6xl items-start">
+    <div id="contact" className="flex flex-col min-h-screen md:justify-center pt-[10vh] md:pt-0 my-0 mx-4 md:mx-auto h-full max-w-full md:max-w-6xl items-start">
       <div className="flex justify-center items-center mb-5">
         <h2 className="font-firaSansFont text-largePlus md:text-DELarge font-bold text-lightNavy">
           <span className="mr-3 font-firaSansFont text-green">04. </span>Contact

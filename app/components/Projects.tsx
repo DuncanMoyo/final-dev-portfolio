@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Projects = () => {
   return (
-    <div id="projects" className="flex flex-col min-h-screen justify-center pt-28 my-0 mx-auto h-full max-w-5xl items-start">
+    <div id="projects" className="flex flex-col min-h-screen justify-center pt-[10vh] my-0 mx-auto h-full max-w-5xl items-start">
       <div className="flex justify-center items-center mb-5">
         <h2 className="font-firaSansFont text-largePlus md:text-DELarge font-bold text-lightNavy">
           <span className="mr-3 font-firaSansFont text-green">03. </span>Some Things I've built

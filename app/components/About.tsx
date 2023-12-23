@@ -9,7 +9,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="flex flex-col min-h-screen justify-center pt-44 md:pt-0 my-0 mx-auto h-full md:h-screen max-w-full md:max-w-6xl items-start"
+      className="flex flex-col min-h-screen justify-center pt-[10vh] md:pt-0 my-0 mx-auto h-full md:h-screen max-w-full md:max-w-6xl items-start"
     >
       <div className="flex justify-center items-center mb-5">
         <h2 className="font-firaSansFont text-largePlus md:text-DELarge font-bold text-lightNavy">
