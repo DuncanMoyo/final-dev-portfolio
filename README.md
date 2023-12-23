@@ -8,7 +8,7 @@ Dive into the world of my software development journey! This portfolio serves as
 
 ## Acknowledgements
 
-Gratitude to Brittany Chiang for the inspiration behind this portfolio's design, based on her v4 portfolio code. Her open-source approach allowed me to build upon her work and create a unique space for my journey.
+Gratitude to [Brittany Chiang](https://github.com/bchiang7) for the inspiration behind this portfolio's design, based on her [v4 portfolio](https://v4.brittanychiang.com/). Her open-source approach allowed me to build upon her work and create a unique space for my journey.
 
 ## Development
 
@@ -23,5 +23,4 @@ Although a personal endeavor, your contributions and suggestions are welcomed. O
 Embrace collaboration—this project is open source under the MIT License.
 
 ## 🌐 Sources
-1. linkedin.com - Duncan Moyo
-2. Brittany Chiang's Portfolio
+2. [Brittany Chiang's Portfolio](v4.brittanychiang.com/)
