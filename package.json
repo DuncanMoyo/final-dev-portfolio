@@ -20,6 +20,7 @@
     "lucide-react": "^0.298.0",
     "next": "14.0.4",
     "react": "^18",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^18",
     "react-hook-form": "^7.49.2",
     "react-icons": "^4.12.0",
@@ -31,6 +32,7 @@
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
+    "@types/react-anchor-link-smooth-scroll": "^1.0.5",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
     "postcss": "^8",

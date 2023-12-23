@@ -2,8 +2,8 @@ import {
   Navbar,
   Hero,
   About,
-  Work,
   Experience,
+  Projects,
   ProjectCard,
   ContactMe,
 } from "./components";
@@ -14,8 +14,8 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
-      <Work />
       <Experience />
+      <Projects />
       <ProjectCard />
       <ContactMe
         message={{

@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const About = () => {
   return (
-    <div className="flex flex-col min-h-screen justify-center my-0 mx-auto h-screen max-w-full md:max-w-6xl items-start">
+    <div id="about" className="flex flex-col min-h-screen justify-center pt-28 md:pt-0 my-0 mx-auto h-screen max-w-full md:max-w-6xl items-start">
       <div className="flex justify-center items-center mb-5">
         <h2 className="font-firaSansFont text-largePlus md:text-DELarge font-bold text-lightNavy">
           <span className="mr-3 font-firaSansFont text-green">01. </span>About

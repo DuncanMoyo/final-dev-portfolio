@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col min-h-screen justify-center my-0 mx-auto h-screen max-w-full md:max-w-6xl items-start">
+    <div id="home" className="flex flex-col min-h-screen justify-center my-0 mx-auto h-screen max-w-full md:max-w-6xl items-start">
       <h1 className="text-base text-green font-robotoFont mb-6 ml-1">
         Hi, my name is
       </h1>

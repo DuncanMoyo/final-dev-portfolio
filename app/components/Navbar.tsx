@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import { navLinks, socialLinks } from "@/lib/constants";
 import { Button } from "./ui/button";
 import Icon from "./ui/Icon";
@@ -15,15 +15,15 @@ const Navbar = () => {
       <div className="h-10 justify-around lg:flex hidden">
         <div className=" bg-navy flex w-full items-center justify-between px-12 h-24">
           {/* ICONS - LEFT SIDE */}
-          <div className="">
-            <h1 className="text-green text-DELarge font-bold">D</h1>
-          </div>
+          <AnchorLink href="#home">
+            <h1 className="text-green text-DELarge font-bold">DM</h1>
+          </AnchorLink>
 
           {/* RIGHT SIDE */}
           <div className="flex">
             <ol className="flex items-center justify-between p-0 m-0">
               {navLinks.map(({ name, url, itemNumber }, index) => (
-                <Link
+                <AnchorLink
                   className=" text-lightNavy hover:text-green"
                   key={index}
                   href={url}
@@ -34,7 +34,7 @@ const Navbar = () => {
                     </span>
                     {name}
                   </li>
-                </Link>
+                </AnchorLink>
               ))}
             </ol>
             <Button variant="outline" className="py-3 px-4 ml-4 text-green">
@@ -47,9 +47,9 @@ const Navbar = () => {
       {/* Fixed Divs */}
       <div className="fixed flex-col bottom-0 left-10 p-4 items-center justify-between md:flex hidden">
         {socialLinks.map(({ icon, link }, index) => (
-          <Link key={index} href={link} target="_blank" className="pb-4">
+          <AnchorLink key={index} href={link} target="_blank" className="pb-4">
             <Icon name={icon} />
-          </Link>
+          </AnchorLink>
         ))}
 
         <hr className="border border-t-1 border-lightNavy h-40" />
@@ -63,7 +63,7 @@ const Navbar = () => {
 
       {/* MOBILE VIEW */}
       <div
-        className={`fixed flex bg-navy overflow-x-hidden z-500 shadow-md px-6 top-0 left-0 right-0 w-full justify-between py-3 items-center md:hidden ${
+        className={`fixed flex bg-navy overflow-x-hidden z-50 shadow-md px-6 top-0 left-0 right-0 w-full justify-between py-3 items-center md:hidden ${
           toggle ? "transition-all ease-out duration-500" : ""
         }`}
       >
@@ -75,11 +75,17 @@ const Navbar = () => {
         <Icon name="phoneA" color="cyan" pointer size="small" />
       </div>
       {toggle && (
-        <div className="flex fixed top-10 bottom-0 left-0 right-0 md:hidden pt-20 bg-white shadow-md border-b h-screen  border-gray flex-col transition-all ease-out duration-500">
+        <div className="flex fixed top-10 bottom-0 left-0 right-0 z-30 md:hidden pt-20 bg-white shadow-md border-b h-screen  border-gray flex-col transition-all ease-out duration-500">
+          <AnchorLink className="text-center" href="#home">Home</AnchorLink>
           {navLinks.map(({ name, url }, index) => (
-            <Link className="my-2 mx-auto" key={index} href={url}>
+            <AnchorLink
+              onClick={() => setToggle(false)}
+              className="my-2 mx-auto"
+              key={index}
+              href={url}
+            >
               {name}
-            </Link>
+            </AnchorLink>
           ))}
           <div className="mx-auto mt-3">
             <Button variant="outline" className="py-3 px-4 text-green">
