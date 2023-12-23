@@ -162,14 +162,14 @@ const ContactMe = ({ message }: Props) => {
                 <FormItem className="w-full px-2 my-3">
                   <FormLabel className="text-lightestNavy">Message</FormLabel>
                   <FormControl>
-                    <Textarea placeholder="Message" rows={4} {...field} />
+                    <Textarea placeholder="Message" className="text-slate" rows={4} {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
               )}
             />
             <Button
-              className="w-full h-[60px] px-2"
+              className="w-full mt-4 h-[60px]"
               type="submit"
               variant={"default"}
             >

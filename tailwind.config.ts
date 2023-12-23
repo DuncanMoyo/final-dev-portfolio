@@ -22,7 +22,7 @@ const config: Config = {
     },
     extend: {
       colors: {
-        navy: "#000316",
+        navy: "#071120",
         darkNavy: "#000a25",
         lightNavy: "#96abc5",
         lightestNavy: "#adcdf4",

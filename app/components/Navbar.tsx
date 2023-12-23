@@ -6,18 +6,25 @@ import { navLinks, socialLinks } from "@/lib/constants";
 import { Button } from "./ui/button";
 import Icon from "./ui/Icon";
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <div className="md:fixed md:top-0 md:left-0 md:right-0 md:z-10">
+    <div className="md:fixed md:top-0 md:left-0 md:right-0 md:z-50">
       {/* TOP BAR */}
       <div className="h-10 justify-around lg:flex hidden">
-        <div className=" bg-navy flex w-full items-center justify-between px-12 h-24">
+        <div className="bg-navy flex w-full items-center justify-between pl-5 pr-12 h-24">
           {/* ICONS - LEFT SIDE */}
           <AnchorLink href="#home">
-            <h1 className="text-green text-DELarge font-bold">DM</h1>
+            <Image
+              src="/assets/images/duncan-logo.png"
+              alt="Duncan logo"
+              width={100}
+              height={100}
+            />
+            {/* <h1 className="text-green text-DELarge font-bold">DM</h1> */}
           </AnchorLink>
 
           {/* RIGHT SIDE */}
@@ -69,7 +76,7 @@ const Navbar = () => {
 
       {/* MOBILE VIEW */}
       <div
-        className={`fixed flex bg-navy overflow-x-hidden z-50 shadow-md px-6 top-0 left-0 right-0 w-full justify-between py-3 items-center md:hidden ${
+        className={`fixed flex bg-navy overflow-x-hidden z-50 shadow-md pl-6 pr-1 top-0 left-0 right-0 w-full justify-between py-3 items-center md:hidden ${
           toggle ? "transition-all ease-out duration-500" : ""
         }`}
       >
@@ -78,13 +85,17 @@ const Navbar = () => {
           onClick={() => setToggle(!toggle)}
         />
 
-        <Icon name="phoneA" color="cyan" pointer size="small" />
+        <AnchorLink href="#home">
+          <Image
+            src="/assets/images/duncan-logo.png"
+            alt="Duncan logo"
+            width={80}
+            height={80}
+          />
+        </AnchorLink>
       </div>
       {toggle && (
         <div className="flex fixed top-10 bottom-0 left-0 right-0 z-30 md:hidden pt-20 bg-white shadow-md border-b h-screen  border-gray flex-col transition-all ease-out duration-500">
-          <AnchorLink className="text-center" href="#home">
-            Home
-          </AnchorLink>
           {navLinks.map(({ name, url }, index) => (
             <AnchorLink
               onClick={() => setToggle(false)}
