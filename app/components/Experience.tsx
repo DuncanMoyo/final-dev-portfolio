@@ -6,7 +6,7 @@ import Icon from "./ui/Icon";
 
 const Experience = () => {
   return (
-    <div id="experience" className="flex flex-col min-h-screen justify-center my-0 md:py-24 mx-4 md:mx-80 h-screen max-w-full md:max-w-6xl items-start">
+    <div id="experience" className="flex flex-col min-h-screen justify-center pt-28 md:pt-0 my-0 md:py-24 mx-4 md:mx-80 h-screen max-w-full md:max-w-6xl items-start">
       <div className="flex justify-center items-center mb-5">
         <h2 className="font-firaSansFont text-largePlus md:text-DELarge text-lightNavy font-bold">
           <span className="mr-3 font-firaSansFont text-green">02. </span>Where I've worked
