@@ -10,15 +10,17 @@ const Experience = (props: Props) => {
   return (
     <div className="flex flex-col min-h-screen justify-center my-0 mx-auto h-full max-w-5xl items-start">
       <div className="flex justify-center items-center mb-5">
-        <h2 className="font-firaSansFont text-DELarge font-bold text-lightNavy">
-          <span className="mr-3 font-firaSansFont text-green">03. </span>Some
-          things I've Built
+        <h2 className="font-firaSansFont text-largePlus md:text-DELarge font-bold text-lightNavy">
+          <span className="mr-3 font-firaSansFont text-green">03. </span>Some Things I've built
         </h2>
-        <hr className="border border-t-1 border-green w-96 ml-3" />
+        <hr className="hidden md:block border border-t-1 border-green w-44 md:w-96 ml-3" />
       </div>
       {projectsData.map(
         ({ description, externalLink, github, image, tech, title }, index) => (
-          <div key={index} className="flex justify-between my-20 w-full">
+          <div
+            key={index}
+            className="md:flex justify-between my-20 w-full hidden"
+          >
             {index % 2 === 0 ? (
               <>
                 <div className="relative w-full image-tint">
@@ -124,6 +126,45 @@ const Experience = (props: Props) => {
                 </div>
               </>
             )}
+          </div>
+        )
+      )}
+      {projectsData.map(
+        ({ description, externalLink, github, tech, title }, index) => (
+          <div key={index} className="flex md:hidden flex-col justify-between w-full p-6">
+            <div className="w-full">
+              <p className="font-robotoFont text-sm pb-1 text-green">
+                Featured Project
+              </p>
+              <p className="font-firaSansFont text-large pb-2 text-lightestNavy font-bold">
+                {title}
+              </p>
+            </div>
+            <div>
+              <p className="text-lightNavy font-firaSansFont text-base">
+                {description}
+              </p>
+            </div>
+            <div>
+              <div className="flex mb-2 mt-6 flex-wrap">
+                {tech.map((technology, index) => (
+                  <p
+                    key={index}
+                    className="px-2 font-robotoFont text-sm text-lightNavy"
+                  >
+                    {technology}
+                  </p>
+                ))}
+              </div>
+              <div className="flex mt-2">
+                <Link target="_blank" href={github} className="p-2">
+                  <Icon name="github" />
+                </Link>
+                <Link target="_blank" href={externalLink} className="p-2">
+                  <Icon name="link" />
+                </Link>
+              </div>
+            </div>
           </div>
         )
       )}

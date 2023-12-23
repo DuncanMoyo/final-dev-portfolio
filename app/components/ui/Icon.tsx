@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { IconContext } from "react-icons";
-import { VscGithubAlt } from "react-icons/vsc";
+import { VscGithubAlt, VscChromeClose, VscMenu } from "react-icons/vsc";
 import { FaInstagram, FaRegFolder, FaRegStar } from "react-icons/fa6";
 import { BsTwitterX } from "react-icons/bs";
 import { FiLinkedin } from "react-icons/fi";
@@ -18,6 +18,8 @@ export const iconNames = [
   "star",
   "gitFork",
   "caretRight",
+  "close",
+  "menu",
 ] as const;
 
 export type IconName = (typeof iconNames)[number];
@@ -57,6 +59,10 @@ const selectIcon = (
       return <PiGitForkFill />;
     case "caretRight":
       return <FaCaretRight />;
+    case "close":
+      return <VscChromeClose />;
+    case "menu":
+      return <VscMenu />;
     default:
       return <></>;
   }

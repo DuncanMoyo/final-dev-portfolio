@@ -10,7 +10,7 @@ import {
 
 export default function Home() {
   return (
-    <main className="my-0 mx-auto py-0 px-36 h-full">
+    <main className="my-0 mx-auto py-0 px-5 md:px-36 h-full">
       <Navbar />
       <Hero />
       <About />
