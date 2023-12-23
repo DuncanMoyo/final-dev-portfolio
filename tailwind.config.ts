@@ -28,6 +28,7 @@ const config: Config = {
         lightestNavy: "#adcdf4",
         slate: "#a69e92",
         green: "#56ffda",
+        card: "#003049"
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",

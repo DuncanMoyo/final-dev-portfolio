@@ -21,8 +21,8 @@ const Navbar = () => {
             <Image
               src="/assets/images/duncan-logo.png"
               alt="Duncan logo"
-              width={100}
-              height={100}
+              width={50}
+              height={50}
             />
             {/* <h1 className="text-green text-DELarge font-bold">DM</h1> */}
           </AnchorLink>
@@ -76,30 +76,30 @@ const Navbar = () => {
 
       {/* MOBILE VIEW */}
       <div
-        className={`fixed flex bg-navy overflow-x-hidden z-50 shadow-md pl-6 pr-1 top-0 left-0 right-0 w-full justify-between py-3 items-center md:hidden ${
+        className={`fixed flex bg-navy overflow-x-hidden z-50 shadow-md px-4 top-0 left-0 right-0 w-full justify-between py-3 items-center md:hidden ${
           toggle ? "transition-all ease-out duration-500" : ""
         }`}
       >
-        <Icon
-          name={toggle ? "close" : "menu"}
-          onClick={() => setToggle(!toggle)}
-        />
-
         <AnchorLink href="#home">
           <Image
             src="/assets/images/duncan-logo.png"
             alt="Duncan logo"
-            width={80}
-            height={80}
+            width={35}
+            height={35}
           />
         </AnchorLink>
+
+        <Icon
+          name={toggle ? "close" : "menu"}
+          onClick={() => setToggle(!toggle)}
+        />
       </div>
       {toggle && (
-        <div className="flex fixed top-10 bottom-0 left-0 right-0 z-30 md:hidden pt-20 bg-white shadow-md border-b h-screen  border-gray flex-col transition-all ease-out duration-500">
+        <div className="flex fixed top-10 bottom-0 left-0 right-0 z-30 md:hidden pt-20 bg-navy shadow-md border-b h-screen  border-gray flex-col transition-all ease-out duration-500">
           {navLinks.map(({ name, url }, index) => (
             <AnchorLink
               onClick={() => setToggle(false)}
-              className="my-2 mx-auto"
+              className="my-2 mx-auto text-lightNavy font-robotoFont"
               key={index}
               href={url}
             >
@@ -111,7 +111,10 @@ const Navbar = () => {
               href="https://drive.google.com/file/d/1jJpUf8f05YfTrSph48jeQRiMrZAzpNO6/view?usp=sharing"
               target="_blank"
             >
-              <Button variant="outline" className="py-3 px-4 text-green">
+              <Button
+                variant="outline"
+                className="py-3 px-4 text-green font-robotoFont"
+              >
                 Resume
               </Button>
             </Link>

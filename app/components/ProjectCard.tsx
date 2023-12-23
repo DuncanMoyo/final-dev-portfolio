@@ -13,7 +13,7 @@ const ProjectCard = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 ">
         {noteworthyProjects.map(
           ({ description, tech, title, externalLink, github }, index) => (
-            <div key={index} className="flex flex-col bg-darkNavy p-4">
+            <div key={index} className="flex flex-col bg-card p-4">
               <div className="flex justify-between items-center">
                 <Icon name="folder" color="#56ffda" size="large" />
                 <div className="flex">
@@ -35,7 +35,7 @@ const ProjectCard = () => {
                 {tech.map((technology, index) => (
                   <p
                     key={index}
-                    className="pr-8 font-robotoFont text-xs text-lightNavy"
+                    className="pr-4 md:pr-8 font-robotoFont text-xs text-lightNavy"
                   >
                     {technology}
                   </p>
