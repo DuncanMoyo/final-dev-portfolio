@@ -24,3 +24,23 @@ html::-webkit-scrollbar-thumb {
   border-radius: 20px;
   border: 3px solid theme("colors.navy");
 }
+
+.hover-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-underline::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #56ffda;
+  transition: width 0.3s;
+}
+
+.hover-underline:hover::after {
+  width: 100%;
+}

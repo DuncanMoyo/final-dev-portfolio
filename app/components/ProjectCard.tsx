@@ -8,7 +8,6 @@ const ProjectCard = () => {
   return (
     <div className="p-2 min-h-screen justify-center mb-20 mx-4 md:mx-auto h-full max-w-full md:max-w-6xl">
       <div className="flex justify-center items-center mb-5">
-
         <hr className="border border-t-1 border-green w-44 md:w-96 ml-3 my-10" />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 ">

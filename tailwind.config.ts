@@ -52,7 +52,8 @@ const config: Config = {
           bottom: 0,
           left: 0,
           backgroundColor: "rgba(0, 100, 0, 0.5)", // This gives a green tint
-          pointerEvents: 'none', // This allows click events to pass through
+          pointerEvents: "none", // This allows click events to pass through
+          transition: "opacity 0.5s ease-in-out", // This adds a transition to the opacity
         },
         ".image-tint:hover::after": {
           opacity: 0,

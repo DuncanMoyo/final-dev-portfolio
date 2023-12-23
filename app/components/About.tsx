@@ -7,7 +7,10 @@ import Link from "next/link";
 
 const About = () => {
   return (
-    <div id="about" className="flex flex-col min-h-screen justify-center pt-28 md:pt-0 my-0 mx-auto h-screen max-w-full md:max-w-6xl items-start">
+    <div
+      id="about"
+      className="flex flex-col min-h-screen justify-center pt-20 md:pt-0 my-0 mx-auto h-screen max-w-full md:max-w-6xl items-start"
+    >
       <div className="flex justify-center items-center mb-5">
         <h2 className="font-firaSansFont text-largePlus md:text-DELarge font-bold text-lightNavy">
           <span className="mr-3 font-firaSansFont text-green">01. </span>About
@@ -26,16 +29,28 @@ const About = () => {
           </p>
           <p className="mb-4 font-firaSansFont text-medium md:text-large text-slate">
             Fast-forward to today, and I’ve had the privilege of learning on a{" "}
-            <Link className="text-green" href="">
+            <Link
+              className="text-green hover-underline"
+              href="https://www.alxafrica.com/"
+              target="_blank"
+            >
               scholarship program
             </Link>
             , worked at a{" "}
-            <Link className="text-green" href="">
+            <Link
+              className="text-green hover-underline"
+              href="https://www.darkpools.ai/"
+              target="_blank"
+            >
               start-up
             </Link>
             , and currently{" "}
-            <Link className="text-green" href="">
-              searching new opportunites
+            <Link
+              className="text-green hover-underline"
+              href="https://drive.google.com/file/d/1jJpUf8f05YfTrSph48jeQRiMrZAzpNO6/view?usp=sharing"
+              target="_blank"
+            >
+              searching for new opportunites
             </Link>
             . My main focus these days is building accessible, inclusive
             products and digital experiences for myself and a variety of
@@ -56,12 +71,12 @@ const About = () => {
         </div>
         <div
           className="image-tint relative z-0 mt-20 md:mt-0 md:ml-20 before:absolute before:-top-10 before:-left-10 before:w-full md:before:max-w-[400px]
-            before:h-full before:border-2 before:border-green before:z-[-1] "
+            before:h-full before:border-2 before:border-green before:z-[-1]"
         >
           <Image
             alt="profile"
             src="/assets/images/duncan.png"
-            className="hover:filter:saturate-200 transit duration-500 z-10 w-full max-w-[400px] md:max-w-[400px]"
+            className="z-10 w-full max-w-[400px] md:max-w-[400px] hover:-translate-x-10 hover:-translate-y-10 ease-in-out duration-500"
             width={300}
             height={300}
           />
