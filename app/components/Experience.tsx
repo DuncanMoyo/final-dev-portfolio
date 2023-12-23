@@ -14,7 +14,7 @@ const Experience = () => {
         <hr className=" hidden md:block border border-t-1 border-green w-44 md:w-96 ml-3" />
       </div>
 
-      <Tabs defaultValue="Dark Pools" className="w-full md:w-[700px]">
+      <Tabs defaultValue="Dark Pools" className="w-full">
         <TabsList>
           {workData.map(({ company }, index) => (
             <TabsTrigger key={index} value={company}>

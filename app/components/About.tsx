@@ -19,9 +19,9 @@ const About = () => {
         <hr className="hidden md:block border border-t-1 border-green w-44 md:w-96 ml-3" />
       </div>
 
-      <div className="flex flex-col md:flex-row items-center justify-between">
+      <div className="flex flex-col-reverse md:flex-row items-center justify-between">
         <div className="w-full md:w-1/2">
-          <p className="mb-4 font-firaSansFont text-medium md:text-large text-slate">
+          <p className="mb-4 pt-6 md:pt-0 font-firaSansFont text-medium md:text-large text-slate">
             Hello! My name is Duncan and I enjoy creating things that live on
             the internet. My interest in web development started back in 2020
             when I decided to try a different career move — turns out trying to
@@ -60,7 +60,7 @@ const About = () => {
             Here are a few technologies I’ve been working with recently:
           </p>
 
-          <div className="items-center mt-5 w-full md:w-1/2 text-slate text-sm grid grid-cols-2 gap-4">
+          <div className="items-center mt-2 md:mt-5 w-full md:w-1/2 text-slate text-sm grid grid-cols-2 gap-4">
             {aboutLanguages.map((language, index) => (
               <div className="flex items-center" key={index}>
                 <Icon name="caretRight" color="green" size="small" />
