@@ -4,13 +4,19 @@ import Image from "next/image";
 import Icon from "./ui/Icon";
 import { projectsData } from "@/lib/constants";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { hoverAnimation } from "@/lib/motion";
 
 const Projects = () => {
   return (
-    <div id="projects" className="flex flex-col min-h-screen justify-center pt-[10vh] my-0 mx-auto h-full max-w-5xl items-start">
-      <div className="flex justify-center items-center mb-5">
-        <h2 className="font-firaSansFont text-largePlus md:text-DELarge font-bold text-lightNavy">
-          <span className="mr-3 font-firaSansFont text-green">03. </span>Some Things I've built
+    <div
+      id="projects"
+      className="flex flex-col min-h-screen justify-center pt-[10vh] my-0 mx-auto h-full max-w-5xl items-start"
+    >
+      <div className="md:pt-10  flex justify-center items-center mb-5">
+        <h2 className="flex font-firaSansFont text-largePlus md:text-DELarge font-bold text-lightNavy">
+          <span className="mr-3 font-firaSansFont text-green">03. </span>Some
+          things I've built
         </h2>
         <hr className="hidden md:block border border-t-1 border-green w-44 md:w-96 ml-3" />
       </div>
@@ -62,12 +68,16 @@ const Projects = () => {
                       ))}
                     </div>
                     <div className="flex justify-end mt-2">
-                      <Link target="_blank" href={github} className="p-2">
-                        <Icon name="github" />
-                      </Link>
-                      <Link target="_blank" href={externalLink} className="p-2">
-                        <Icon name="link" />
-                      </Link>
+                      <motion.div whileHover={hoverAnimation} className="p-2">
+                        <Link target="_blank" href={github}>
+                          <Icon name="github" />
+                        </Link>
+                      </motion.div>
+                      <motion.div whileHover={hoverAnimation} className="p-2">
+                        <Link target="_blank" href={externalLink}>
+                          <Icon name="link" />
+                        </Link>
+                      </motion.div>
                     </div>
                   </div>
                 </div>
@@ -95,12 +105,16 @@ const Projects = () => {
                       ))}
                     </div>
                     <div className="flex mt-2">
-                      <Link target="_blank" href={github} className="p-2">
-                        <Icon name="github" />
-                      </Link>
-                      <Link target="_blank" href={externalLink} className="p-2">
-                        <Icon name="link" />
-                      </Link>
+                      <motion.div whileHover={hoverAnimation} className="p-2">
+                        <Link target="_blank" href={github}>
+                          <Icon name="github" />
+                        </Link>
+                      </motion.div>
+                      <motion.div whileHover={hoverAnimation} className="p-2">
+                        <Link target="_blank" href={externalLink}>
+                          <Icon name="link" />
+                        </Link>
+                      </motion.div>
                     </div>
                   </div>
                 </div>
@@ -130,7 +144,10 @@ const Projects = () => {
       )}
       {projectsData.map(
         ({ description, externalLink, github, tech, title }, index) => (
-          <div key={index} className="flex md:hidden flex-col justify-between w-full p-6">
+          <div
+            key={index}
+            className="flex md:hidden flex-col justify-between w-full p-6"
+          >
             <div className="w-full">
               <p className="font-robotoFont text-sm pb-1 text-green">
                 Featured Project

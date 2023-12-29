@@ -83,7 +83,13 @@ const IconWrapper = (props: any) => (
   <span style={props.pointer ? { cursor: "pointer" } : {}} {...props} />
 );
 
-const Icon: FC<IconPropTypes> = ({ name, color, size, onClick, pointer }) => (
+const Icon: FC<IconPropTypes> = ({
+  name,
+  color,
+  size,
+  onClick,
+  pointer,
+}) => (
   <IconContext.Provider
     value={{ color: color || "#adcdf4", size: selectIconSize(size) }}
   >

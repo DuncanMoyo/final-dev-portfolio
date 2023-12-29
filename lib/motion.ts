@@ -86,3 +86,10 @@ export const staggerContainer = (staggerChildren: any, delayChildren: any) => {
     },
   };
 };
+
+export const hoverAnimation = {
+  scale: 1.5,
+  transition: {
+    duration: 0.5,
+  },
+};

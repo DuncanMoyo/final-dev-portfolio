@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import { motion } from "framer-motion";
+import { hoverAnimation } from "@/lib/motion";
 
 const Hero = () => {
   return (
@@ -32,15 +34,17 @@ const Hero = () => {
         </Link>
         .
       </p>
-      <AnchorLink href="#projects">
-        <Button
-          variant="outline"
-          size={"lg"}
-          className="py-5 px-7 mt-12 text-base ml-1 text-green"
-        >
-          Check out my projects!
-        </Button>
-      </AnchorLink>
+      <motion.div whileHover={hoverAnimation}>
+        <AnchorLink href="#projects">
+          <Button
+            variant="outline"
+            size={"lg"}
+            className="py-5 px-7 mt-12 text-base ml-1  text-green"
+          >
+            Check out my projects!
+          </Button>
+        </AnchorLink>
+      </motion.div>
     </div>
   );
 };

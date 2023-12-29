@@ -3,6 +3,8 @@
 import { noteworthyProjects } from "@/lib/constants";
 import Icon from "./ui/Icon";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { hoverAnimation } from "@/lib/motion";
 
 const ProjectCard = () => {
   return (
@@ -18,10 +20,14 @@ const ProjectCard = () => {
                 <Icon name="folder" color="#56ffda" size="large" />
                 <div className="flex">
                   <Link className="p-2" href={github} target="_blank">
-                    <Icon name="github" />
+                    <motion.div whileHover={hoverAnimation}>
+                      <Icon name="github" />
+                    </motion.div>
                   </Link>
                   <Link className="p-2" href={externalLink} target="_blank">
-                    <Icon name="link" />
+                    <motion.div whileHover={hoverAnimation}>
+                      <Icon name="link" />
+                    </motion.div>
                   </Link>
                 </div>
               </div>

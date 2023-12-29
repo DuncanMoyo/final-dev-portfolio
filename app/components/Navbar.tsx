@@ -7,6 +7,8 @@ import { Button } from "./ui/button";
 import Icon from "./ui/Icon";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { hoverAnimation } from "@/lib/motion";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -45,27 +47,39 @@ const Navbar = () => {
                 </AnchorLink>
               ))}
             </ol>
-            <Link
-              href="https://drive.google.com/file/d/1jJpUf8f05YfTrSph48jeQRiMrZAzpNO6/view?usp=sharing"
-              target="_blank"
-            >
-              <Button variant="outline" className="py-3 px-4 text-green">
-                Resume
-              </Button>
-            </Link>
+            <motion.div whileHover={hoverAnimation}>
+              <Link
+                href="https://drive.google.com/file/d/1jJpUf8f05YfTrSph48jeQRiMrZAzpNO6/view?usp=sharing"
+                target="_blank"
+              >
+                <Button variant="outline" className="py-3 px-4 text-green">
+                  Resume
+                </Button>
+              </Link>
+            </motion.div>
           </div>
         </div>
       </div>
 
       {/* Fixed Divs */}
-      <div className="fixed flex-col bottom-0 left-10 p-4 items-center justify-between md:flex hidden">
+      <div className="fixed flex-col bottom-0 left-10 p-4 md:flex hidden items-center justify-between">
         {socialLinks.map(({ icon, link }, index) => (
-          <AnchorLink key={index} href={link} target="_blank" className="pb-4">
-            <Icon name={icon} />
-          </AnchorLink>
+          <motion.div
+            whileHover={hoverAnimation}
+            className="md:flex hidden items-center justify-between"
+          >
+            <AnchorLink
+              key={index}
+              href={link}
+              target="_blank"
+              className="pb-4"
+            >
+              <Icon name={icon} />
+            </AnchorLink>
+          </motion.div>
         ))}
 
-        <hr className="border border-t-1 border-lightNavy h-40" />
+        <hr className="border border-t-1 w-0 border-lightNavy h-40" />
       </div>
       <div className="fixed flex-col items-center bottom-0 right-10 p-4 justify-between md:flex hidden">
         <p className="fixed font-robotoFont bottom-[250px] text-sm text-lightNavy rotate-90">
