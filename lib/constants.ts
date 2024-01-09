@@ -101,7 +101,7 @@ export const projectsData: {
       "A comprehensive web application designed to streamline administrative tasks. This dashboard provides a centralized platform for managing various online projects and services.",
     tech: ["Mongo", "Express", "React", "Node", "MongoDB"],
     github: " https://github.com/DuncanMoyo/mern-admin-dashboard",
-    externalLink: "https://admin-frontend-qp6d.onrender.com/dashboard",
+    externalLink: "https://admin-frontend-qp6d.onrender.com",
     image: "/assets/images/admin.png",
   },
   {
