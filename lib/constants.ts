@@ -107,16 +107,16 @@ export const projectsData: {
   {
     title: "Paws&Purrs",
     description:
-      "This website is a fun and interactive platform that utilizes TheDogAPI and TheCatAPI. It provides users with a wide variety of images and information about different breeds of cats and dogs.",
-    tech: ["Python", "CSS", "Flask", "Nginx"],
-    github: "https://github.com/F1R3BLAZ3/Paws-Purrs",
-    externalLink: "http://16.170.162.77/",
-    image: "/assets/images/paws.png",
+      "An events management site that allows users to join and create their own fitness events. Filter through different events, don't workout alone and enjoy the pain.",
+    tech: ["Next.js", "Tailwind", "Clerk", "MOngoDB"],
+    github: "https://github.com/DuncanMoyo/fitfusion",
+    externalLink: "https://fitfusion-livid.vercel.app/",
+    image: "/assets/images/fitfusion.png",
   },
   {
     title: "Threads Clone",
     description:
-      "A dynamic and interactive platform that allows users to create, manage, and participate in discussion threads1. It provides a user-friendly interface where users can post new topics, reply to existing threads and engage",
+      "A dynamic and interactive platform that allows users to create, manage, and participate in discussion threads. It provides a user-friendly interface where users can post new topics, reply to existing threads and engage",
     tech: ["Next.js", "Tailwind", "Vercel", "Typescript", "Clerk"],
     externalLink:
       "https://647d4c0caf2e9e162c6f1c1b--gregarious-cannoli-cffcbf.netlify.app/",

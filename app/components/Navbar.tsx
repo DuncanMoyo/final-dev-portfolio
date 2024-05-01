@@ -49,7 +49,7 @@ const Navbar = () => {
             </ol>
             <motion.div whileHover={hoverAnimation}>
               <Link
-                href="https://drive.google.com/file/d/1jJpUf8f05YfTrSph48jeQRiMrZAzpNO6/view?usp=sharing"
+                href="https://drive.google.com/file/d/1ybPh-aS8IR_hqWhhGKNO5A5c-tSgZEWd/view?usp=sharing"
                 target="_blank"
               >
                 <Button variant="outline" className="py-3 px-4 text-green">
@@ -122,7 +122,7 @@ const Navbar = () => {
           ))}
           <div className="mx-auto mt-3">
             <Link
-              href="https://drive.google.com/file/d/1jJpUf8f05YfTrSph48jeQRiMrZAzpNO6/view?usp=sharing"
+              href="https://drive.google.com/file/d/1ybPh-aS8IR_hqWhhGKNO5A5c-tSgZEWd/view?usp=sharing"
               target="_blank"
             >
               <Button

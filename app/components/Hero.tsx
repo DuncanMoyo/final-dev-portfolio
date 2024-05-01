@@ -23,14 +23,30 @@ const Hero = () => {
       </h3>
       <p className="font-firaSansFont text-slate text-mediumPlus w-full md:w-2/3 ml-1 mt-5">
         I’m a software engineer specializing in building (and occasionally
-        designing) exceptional digital experiences. Currently, I’m focused on
-        finishing up my projects with{" "}
+        designing) exceptional digital experiences. I just finishied up my
+        projects with{" "}
         <Link
           href="https://www.alxafrica.com/"
           target="_blank"
           className="text-green hover-underline"
         >
           ALX Africa
+        </Link>
+        . Check out my{" "}
+        <Link
+          href="https://www.alxafrica.com/"
+          target="_blank"
+          className="text-green hover-underline"
+        >
+          ALX Africa Certicate
+        </Link>
+        {" "}as well as my{" "}
+        <Link
+          href="https://www.alxafrica.com/"
+          target="_blank"
+          className="text-green hover-underline"
+        >
+          transcript
         </Link>
         .
       </p>
