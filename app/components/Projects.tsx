@@ -130,7 +130,7 @@ const Projects = () => {
                   </Link>
 
                   <div>
-                    <div className="absolute top-1/2 left-[-67%] transform translate-y-[-50%] w-[500px] bg-darkNavy p-6 z-10">
+                    <div className="absolute top-1/2 left-[-67%] transform translate-y-[-50%] w-[500px] bg-darkNavy p-4 z-10">
                       <p className="text-lightNavy font-firaSansFont text-mediumPlus">
                         {description}
                       </p>

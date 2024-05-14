@@ -105,7 +105,7 @@ export const projectsData: {
     image: "/assets/images/admin.png",
   },
   {
-    title: "Paws&Purrs",
+    title: "FitFusion",
     description:
       "An events management site that allows users to join and create their own fitness events. Filter through different events, don't workout alone and enjoy the pain.",
     tech: ["Next.js", "Tailwind", "Clerk", "MOngoDB"],
