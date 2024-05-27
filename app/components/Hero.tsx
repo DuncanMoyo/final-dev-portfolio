@@ -23,7 +23,7 @@ const Hero = () => {
       </h3>
       <p className="font-firaSansFont text-slate text-mediumPlus w-full md:w-2/3 ml-1 mt-5">
         I’m a software engineer specializing in building (and occasionally
-        designing) exceptional digital experiences. I just finishied up my
+        designing) exceptional digital experiences. I just finished up my
         projects with{" "}
         <Link
           href="https://www.alxafrica.com/"
@@ -34,15 +34,15 @@ const Hero = () => {
         </Link>
         . Check out my{" "}
         <Link
-          href="https://www.alxafrica.com/"
+          href="https://drive.google.com/file/d/1J3JZhUTFr4rkLOAJ-aeKrCU4B1Bua3A3/view?usp=drive_link"
           target="_blank"
           className="text-green hover-underline"
         >
           ALX Africa Certicate
-        </Link>
-        {" "}as well as my{" "}
+        </Link>{" "}
+        as well as my{" "}
         <Link
-          href="https://www.alxafrica.com/"
+          href="https://drive.google.com/file/d/1QFT2TH8OpwdrOhX8YoXVHzvp2qDeFIsY/view?usp=drive_link"
           target="_blank"
           className="text-green hover-underline"
         >

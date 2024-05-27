@@ -65,17 +65,18 @@ const Navbar = () => {
       <div className="fixed flex-col bottom-0 left-10 p-4 md:flex hidden items-center justify-between">
         {socialLinks.map(({ icon, link }, index) => (
           <motion.div
+            key={index}
             whileHover={hoverAnimation}
             className="md:flex hidden items-center justify-between"
           >
-            <AnchorLink
-              key={index}
+            <a
               href={link}
               target="_blank"
+              rel="noopener noreferrer"
               className="pb-4"
             >
               <Icon name={icon} />
-            </AnchorLink>
+            </a>
           </motion.div>
         ))}
 
